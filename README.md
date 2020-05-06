@@ -4,11 +4,10 @@ A docker image to be used on biocai machines
 
 ![Docker Pulls](https://img.shields.io/docker/pulls/cafernandezlo/es_udc_biocai_rbase.svg)
 ![Docker Stars](https://img.shields.io/docker/stars/cafernandezlo/es_udc_biocai_rbase.svg)
-![](https://images.microbadger.com/badges/image/cafernandezlo/es_udc_biocai_rbase.svg)
 
 **A docker images to be used on biocai machines**
 
-- [cafernandezlo/biocai])(#cafernandezloes_udc_biocai_rbase)
+- [cafernandezlo/biocai](#cafernandezloes_udc_biocai_rbase)
 	- [Contributing](#contributing)
 	- [Quick Start](#quick-start)
 
