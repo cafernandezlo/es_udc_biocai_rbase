@@ -7,10 +7,9 @@ ARG GCC_VERSION
 ENV R_VERSION=${R_VERSION:-3.6.3} \
     GCC_VERSION=${GCC_VERSION:-6.3.0}
 
-WORKDIR /tmp
-
 # install gcc for dependencies and R
-RUN yum update -y \
+RUN cd /tmp \
+ && yum update -y \
  && yum install -y curl wget texinfo-tex flex zip libgcc glibc-devel \
         gcc g++ gcc-c++ zlib zlib-devel bzip2 bzip2-devel xz xz-devel \
         pcre pcre-devel curl-devel readline-devel libxml2-devel epel-release \
@@ -25,16 +24,17 @@ RUN yum update -y \
  && mv usrLocalLib64.conf /etc/ld.so.conf.d/ \
  # && ln -s /usr/local/lib64/libstdc++.so.6 /usr/lib64 \
 # install R
- && cd \
  && curl -O https://cdn.rstudio.com/r/centos-6/pkgs/R-${R_VERSION}-1-1.x86_64.rpm \
  && yum install -y R-${R_VERSION}-1-1.x86_64.rpm \
  && ln -s /opt/R/${R_VERSION}/bin/R /usr/local/bin/R \
  && ln -s /opt/R/${R_VERSION}/bin/Rscript /usr/local/bin/Rscript \
 # clean
+ && yum erase -y wget \
  && yum clean all \
  && rm -rf /var/cache/yum \
- && rm -rf /tmp/gcc-${GCC_VERSION}.tar.gz gcc-${GCC_VERSION} gcc-build \
- && rm -rf R-${R_VERSION}-1-1.x86_64.rpm
+ && rm -rf /tmp/gcc-${GCC_VERSION}.tar.gz /tmp/gcc-${GCC_VERSION} /tmp/gcc-build \
+ && rm -rf R-${R_VERSION}-1-1.x86_64.rpm \
+ && cd
 
 
 # install r packages
