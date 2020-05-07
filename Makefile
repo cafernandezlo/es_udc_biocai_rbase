@@ -1,13 +1,14 @@
 NAME = cafernandezlo/es_udc_biocai_rbase
-VERSION = 3.6.3-1.0.0
+R_VERSION = 3.6.3
+VERSION = ${R_VERSION}-1.0.0
 
 .PHONY: build build-nocache tag-latest push push-latest release git-tag-version
 
 build:
-	docker build -t $(NAME):$(VERSION) --rm image
+	docker build --build-arg R_VERSION=${R_VERSION} -t $(NAME):$(VERSION) --rm image
 
 build-nocache:
-	docker build -t $(NAME):$(VERSION) --no-cache --rm image
+	docker build --build-arg R_VERSION=${R_VERSION} -t $(NAME):$(VERSION) --no-cache --rm image
 
 tag-latest:
 	docker tag $(NAME):$(VERSION) $(NAME):latest
