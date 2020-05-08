@@ -4,8 +4,8 @@ Or how to run modern stuff over an old CentOS-6.
 
 ![Docker Pulls](https://img.shields.io/docker/pulls/cafernandezlo/es_udc_biocai_rbase.svg)
 ![Docker Stars](https://img.shields.io/docker/stars/cafernandezlo/es_udc_biocai_rbase.svg)
-[![GitHub tag](https://img.shields.io/github/tag/Naereen/StrapDown.js.svg)](https://GitHub.com/Naereen/StrapDown.js/tags/)
-[![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE)
+[![GitHub tag](https://img.shields.io/github/tag/cafernandezlo/es_udc_biocai_rbase.svg)](https://GitHub.com/cafernandezlo/es_udc_biocai_rbase/tags/)
+[![GitHub license](https://img.shields.io/github/license/cafernandezlo/es_udc_biocai_rbase.svg)](https://github.com/cafernandezlo/es_udc_biocai_rbase/blob/master/LICENSE)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)
 
 **A docker image to be used on biocai machines**
