@@ -43,6 +43,7 @@ RUN R -e "install.packages('caret', repos='http://cran.us.r-project.org')" \
 && R -e "install.packages('doMC', repos='http://cran.us.r-project.org')" \
 && R -e "install.packages('dplyr', repos='http://cran.us.r-project.org')"\
 && R -e "install.packages('mlr', repos='http://cran.us.r-project.org')"\
+&& R -e "install.packages('glmnet', repos='http://cran.us.r-project.org')"\
 && R -e "install.packages('party', repos='http://cran.us.r-project.org')"
 
 RUN mkdir git projects

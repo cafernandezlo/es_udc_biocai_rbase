@@ -30,4 +30,4 @@ List of libraries and software:
 
 - FROM centos:centos6
 - System libraries: curl, wget, texinfo-tex, flex, zip, libgcc, glibc-devel, gcc, g++, gcc-c++, zlib, zlib-devel, bzip2, bzip2-devel, xz, xz-devel, pcre, pcre-devel, curl-devel, readline-devel, libxml2-devel, epel-release, gcc-6.3.0, R-3.6.3
-- R packages (and dependencies): caret, modelgrid, doMC, dplyr, mlr, party 
+- R packages (and dependencies): caret, modelgrid, doMC, dplyr, mlr, party, glmnet 
