@@ -1,6 +1,6 @@
 NAME = cafernandezlo/es_udc_biocai_rbase
 R_VERSION = 3.6.3
-VERSION = ${R_VERSION}-1.0.1
+VERSION = ${R_VERSION}-1.0.2
 
 .PHONY: build build-nocache tag-latest push push-latest release git-tag-version
 
